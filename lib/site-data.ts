@@ -72,7 +72,7 @@ export const routeContent: Record<
       },
       {
         title: 'Why there is no numbered ranking yet',
-        body: 'Stake is the only approved active affiliate operator currently listed. A single operator is not enough to support a comparative ranking, so Casireo presents an unrated review instead of manufacturing a league table.',
+        body: 'Stake and JetTon are the approved active affiliate operators currently listed. Casireo does not yet have enough verified, comparable evidence to support a numbered ranking, so both are presented as unrated reviews instead of manufacturing a league table.',
       },
       {
         title: 'Checks to make before choosing',
@@ -287,7 +287,7 @@ export const routeContent: Record<
     description:
       'Read Casireo’s evidence-led online casino reviews with clear affiliate disclosure and no invented ratings, bonuses or availability claims.',
     intro:
-      'Casireo publishes an operator review only when the relationship and scope can be described accurately. Stake is currently the sole active affiliate review; pending operators are not displayed as partners or recommendations.',
+      'Casireo publishes an operator review only when the relationship and scope can be described accurately. Stake and JetTon are currently the active affiliate reviews; pending operators are not displayed as partners or recommendations.',
     sections: [
       {
         title: 'What each review is designed to answer',

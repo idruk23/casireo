@@ -11,6 +11,7 @@ import {
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { StakeCard } from '@/components/stake-card';
+import { JetTonCard } from '@/components/jetton-card';
 import { routeContent } from '@/lib/site-data';
 
 export function generateStaticParams() {
@@ -177,11 +178,12 @@ export default async function ContentPage({
               <div className="mb-7">
                 <p className="eyebrow">Active review</p>
                 <h2 className="display mt-2 text-3xl font-semibold">
-                  Approved operator review
+                  Approved operator reviews
                 </h2>
               </div>
-              <div className="max-w-sm">
+              <div className="grid gap-4 md:grid-cols-2">
                 <StakeCard />
+                <JetTonCard />
               </div>
             </div>
           )}

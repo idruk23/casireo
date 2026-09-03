@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { routeContent } from '@/lib/site-data';
 export default function sitemap(): MetadataRoute.Sitemap {
-  const modified = new Date('2026-08-31');
+  const modified = new Date('2026-09-03');
   const indexableSlugs = Object.keys(routeContent).filter(
     (slug) => slug !== 'contact',
   );
@@ -14,6 +14,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://casireo.com/stake-review',
+      lastModified: modified,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://casireo.com/jetton-review',
       lastModified: modified,
       changeFrequency: 'monthly',
       priority: 0.9,

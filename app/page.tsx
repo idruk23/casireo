@@ -17,6 +17,7 @@ import {
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { StakeCard } from '@/components/stake-card';
+import { JetTonCard } from '@/components/jetton-card';
 
 const categories = [
   {
@@ -61,7 +62,7 @@ const faq = [
   ],
   [
     'How are affiliate casino reviews identified?',
-    'Affiliate reviews are labeled clearly. Stake is currently the only active affiliate operator on Casireo, and its review does not include an unverified rating or bonus.',
+    'Affiliate reviews are labeled clearly. Stake and JetTon are currently Casireo’s active affiliate operators, and neither review includes an unverified rating or bonus.',
   ],
   [
     'How does Casireo assess casinos?',
@@ -170,12 +171,12 @@ export default function Home() {
           <div>
             <p className="eyebrow">Comparison desk</p>
             <h2 className="display mt-2 text-4xl font-semibold sm:text-5xl">
-              Featured Casino Review
+              Featured Casino Reviews
             </h2>
             <p className="mt-3 max-w-2xl text-sm leading-6 text-stone-400">
-              Only approved operator reviews appear here. Stake is currently
-              Casireo’s sole active affiliate listing, with no unverified bonus
-              or rating.
+              Only approved operator reviews appear here. Stake and JetTon are
+              currently Casireo’s active affiliate listings, with no unverified
+              bonuses or ratings.
             </p>
           </div>
           <Link
@@ -185,8 +186,9 @@ export default function Home() {
             Our methodology <ArrowRight className="ml-2" size={16} />
           </Link>
         </div>
-        <div className="max-w-sm">
+        <div className="grid max-w-3xl gap-4 md:grid-cols-2">
           <StakeCard />
+          <JetTonCard />
         </div>
       </section>
       <section className="border-y border-white/5 bg-[#0b0d12]/80">
